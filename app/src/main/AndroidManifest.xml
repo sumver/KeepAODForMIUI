@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:targetApi="31" >
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="MIUI万象息屏时钟会根据环境光调节亮度（只有两档：暗和亮），但是很多时候那个暗光实在没法一眼瞅清时间。\n该模块会固定息屏为亮光档。\n作用域勾选万象息屏后，必须停止万象息屏app后才生效（如果懒，重启一下手机就行）" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="89"/>
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/scope"/>
+
+    </application>
+</manifest>
