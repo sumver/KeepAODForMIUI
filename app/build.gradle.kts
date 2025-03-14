@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sumver.fixmiaod"
+    namespace = "com.sumver.keepaod"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.sumver.fixmiaod"
+        applicationId = "com.sumver.keepaod"
         minSdk = 30
         targetSdk = 35
         versionCode = 1

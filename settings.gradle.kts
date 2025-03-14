@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "myxposedmod"
+rootProject.name = "keepaod"
 include(":app")
  

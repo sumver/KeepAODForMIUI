@@ -16,7 +16,7 @@
             android:value="true" />
         <meta-data
             android:name="xposeddescription"
-            android:value="MIUI万象息屏时钟会根据环境光调节亮度（只有两档：暗和亮），但是很多时候那个暗光实在没法一眼瞅清时间。\n该模块会固定息屏为亮光档。\n作用域勾选万象息屏后，必须停止万象息屏app后才生效（如果懒，重启一下手机就行）" />
+            android:value="MIUI万象息屏永不熄灭（不会因为静置、黑暗环境而关闭，省电模式/超级省电模式除外）\n使用前提必须是万象息屏设置为始终显示\n作用域勾选万象息屏后，必须停止一次万象息屏才生效（或者直接重启手机也行）" />
         <meta-data
             android:name="xposedminversion"
             android:value="89"/>
