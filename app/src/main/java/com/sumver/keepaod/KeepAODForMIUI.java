@@ -12,7 +12,6 @@ public class KeepAODForMIUI implements IXposedHookLoadPackage {
 
     @Override
     public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
-        // 确保只针对目标应用（小米的息屏服务）
         if (!lpparam.packageName.equals("com.miui.aod")) {
             return;
         }
@@ -24,7 +23,7 @@ public class KeepAODForMIUI implements IXposedHookLoadPackage {
             XposedHelpers.findAndHookMethod(
                     "com.miui.aod.doze.MiuiDozeScreenBrightnessController",
                     lpparam.classLoader,
-                    "onOffTimeout", // 方法名
+                    "onOffTimeout",
                     new XC_MethodHook() {
                         @Override
                         protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
